@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+          <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Dhanush Chandra</h1>
+
+          <p class="title">Programmer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dhanushchandra216@gmail.com" class="contact-link">dhanushchandra216@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+916303288757" class="contact-link">+91 6303288757</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 21, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Hyderbad, Telangana, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+           <li class="social-item">
+            <a href="https://www.linkedin.com/in/dhanush-chandra-8451b7208/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Dhanush1296?tab=repositories" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+           <p>
+           I'm Dhanush Chandra, a passionate Software programmer and currently undergoing training in AWS (Amazon Web Services). 
+           Python has been my language of choice for its simplicity, readability, and extensive libraries, allowing me to bring 
+           ideas to life efficiently. 
+          </p>
+          <p>
+           As an AWS trainee, I am actively exploring the world of cloud computing and learning how to leverage AWS services to 
+           build scalable and robust solutions.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+               <div class="service-icon-box">
+                <img src="./assets/images/icon-devops.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps</h4>
+
+                <p class="service-item-text">
+                  Automating the process of building and deploying the app code through CI/CD pipeline.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-cybersecurity.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AWS Cloud</h4>
+
+                <p class="service-item-text">
+                  Constantly preparing for AWS certifications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">NLP Resume Parser</h4>
+
+                <p class="service-item-text">
+                  Developed a resume parser using python nltk modules, accuracy of around 70%.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Dot Net RazorPages</h4>
+
+                <p class="service-item-text">
+                  Developed websites and dynamic pages using Dotnet RazorPages.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Arjun Collage of Technology and Science</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Graduated as Computer Science Engineer (CSE), First Class with CGPA of 6.8.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt Institute of Electronics</h4>
+
+              <span>2015 — 2018(Dec)</span>
+
+              <p class="timeline-text">
+                Special Diploma (SCP) in Computer Programming, First Class with 65%.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">St. Joseph high School</h4>
+
+              <span>2014 — 2015</span>
+
+              <p class="timeline-text">
+                Secondary School Certificate with 8.0 GPA.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS re/Start Training</h4>
+
+              <span><i>Tech Mahindra</i></span>
+
+              <span>Nov 2023 — Present</span>
+
+              <p class="timeline-text">
+                I'm currently embarking on an exciting journey as an AWS Trainee at Tech Mahindra. Passionate about cloud technologies 
+                and driven by a desire to stay at the forefront of innovation, I've chosen to specialize in Amazon Web Services.
+                <br>              
+                The collaborative environment and cutting-edge projects at Tech Mahindra provide me with invaluable hands-on experience, 
+                allowing me to apply theoretical knowledge to real-world scenarios. I am particularly enthusiastic about the potential 
+                of AWS to transform businesses and drive digital innovation.
+              </p>
+              <p class="timeline-text">
+               Skills: Cloud Computing · AWS Lambda · AWS Identity and Access Management (AWS IAM) · AWS Command Line Interface (CLI) · 
+               DevOps · Linux · Amazon Web Services (AWS)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Programmer</h4>
+                        
+              <span><i>Dollar Staffing</i></span>
+              
+              <span>Sep 2022 — Nov 2023</span>
+
+              <p class="timeline-text">
+                <ul class="timeline-item">
+                  <li class="timeline-text">
+                    Worked in ASP.NET Razor pages, C# .NET, and Python.
+                  </li>
+                  <li class="timeline-text">
+                    Experience in developing web pages using ASP.NET Razor pages.
+                  </li>
+                  <li class="timeline-text">
+                    Worked on NLP (Natural Language Processing) to develop ‘Resume Parser’.
+                  </li>
+                  <li class="timeline-text">
+                    Used NLTK modules (Stop-words, tokenizing, etc.) to parse output.
+                  </li>
+                  <li class="timeline-text">
+                    Good understanding in SDLC Life Cycle and Agile Methodologies.
+                  </li>
+                  <li class="timeline-text">
+                    Ability to write test cases and scenarios based on the requirement.
+                  </li>
+                  <li class="timeline-text">
+                    Worked with Flask API module (in Python) to retrieve values from the Python virtual environment.
+                  </li>
+              </ul>
+
+                 <ul class="timeline-text">
+                    <p>Skills: C# · HTML5 · Software Development Life Cycle (SDLC) · Project Management · ASP.NET Razor · HTML · Cascading Style Sheets (CSS) · SQL · Bootstrap · Python (Programming Language)</p>
+                 </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DevOps Internship</h4>
+
+              <span><i>Kelly Technologies</i></span>
+
+              <span>Mar 2023 — Jun 2023</span>
+
+              <p class="timeline-text">
+                Collaboration with Development and Operations Teams: 
+                Foster effective communication and collaboration between development and operations teams.
+                <br>
+                Version Control:
+                Work with version control systems (e.g., Git) to manage and track changes in code repositories.
+                Continuous Integration (CI):
+                Assist in setting up and maintaining CI/CD pipelines for automated testing and deployment.
+                
+                Skills: Git · Jenkins · docker · Amazon Web Services (AWS) · Ansible
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NLP (Natural Language Processing)</h5>
+                <data value="80">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Dotnet</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Linux</h5>
+                <data value="90">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS</h5>
+                <data value="50">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+          
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+            
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+           <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.3580206395945!2d78.56968600000003!3d17.475070999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9c6e16050bc1%3A0x28d82d235af15be0!2sECIL%2C%20Cherlapalli%20Industrial%20Area%2C%20Cherlapalli%2C%20Secunderabad%2C%20Telangana%20500062!5e0!3m2!1sen!2sin!4v1704198744827!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
